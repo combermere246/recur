@@ -1,21 +1,31 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 
 int reverse (int n)
 	{
-		
-	n = 124
+		int r=0;
+		int m;
 	
-	while (num >=0)
+	while (n>0)
 	{
-		num=num%10
 		
-		cout << num;
-		return num
+		m = n%10;
+		r = r*10+m;
+		n = n/10;
+			
 	}	
-		
-		
+		return r;
 	}
 	
+int main ()
+{
+	
+	int num = 124753;
+	int number = reverse(num);
+	
+	cout << number << endl;
+}
 	
