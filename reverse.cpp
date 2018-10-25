@@ -29,10 +29,10 @@ int reverse (int n, int r)
 		{
 		
 		m = n%10;
-		n = n/10;	
+		//n = n/10;	
 		r = r*10+m;
 		
-		return reverse (n,r);
+		return reverse ((n/10),r);
 			
 		}
 		else
@@ -43,7 +43,7 @@ int reverse (int n, int r)
 int main ()
 {
 	int g=0;
-	int num = 12478;
+	int num = 1247878;
 	
 	int number = reverse(num,g);
 	
